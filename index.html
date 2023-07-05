@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="C:\Users\david\Documents\nasa\Images\mars_1146292.png">
+    <title>Mars Exploration </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">    
+        <div class="row">
+            <div class="col-12 center text"> 
+                <img src="C:\Users\david\Documents\nasa\Images\spaceship.png" alt="Logo" class="logo">
+                <h1 class="Title">Mars Exploration</h1>
+                <p class="description">Discover the wonders of Mars through stunning images captured by NASA's rovers. This website use and API
+                    from Nasa to get first hand images from their rover as well as some info about their Camara view name, Rover Name, status, landing and Lauch dates.
+                    Select Dates From <b>2014</b> to <b>2022</b> and select the Camara view of your Preferences.
+                </p>
+            
+                <input id="input" type="text" placeholder="YYYY-MM-DD" class="input-box">
+                <select id="filterSelect" class="filter-select">
+                    <option value="">--- Select ---</option>
+                    <option value="Front Hazard Avoidance Camera">Front Hazard Avoidance Camera</option>
+                    <option value="Rear Hazard Avoidance Camera">Rear Hazard Avoidance Camera</option>
+                    <option value="Mast Camera">Mast Camera</option>
+                    <option value="Navigation Camera">Navigation Camera</option>
+                </select>
+                <button id="Btn" class="buttom-search">search</button>
+            </div>
+        </div>
+        <div id="dataInject" class="row justify-content-center"></div>
+        <!-- Data population -->
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
