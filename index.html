@@ -33,6 +33,20 @@
         <!-- Data population -->
     </div>
 </div>
-
-
-    <script src="script.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#input").datepicker({
+            dateFormat: "yy-mm-dd",
+            minDate: new Date(2014, 0, 1),
+            maxDate: new Date(2022, 11, 31),
+            changeMonth: true, 
+            changeYear: true        
+        });
+    });
+</script>
+<script src="script.js"></script>
+</body>
+</html>
