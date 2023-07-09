@@ -15,7 +15,7 @@
                 <h1 class="Title">Mars Explorer</h1>
                 <p class="description">Discover the wonders of Mars through stunning images captured by NASA's rovers. This website use an API
                     from Nasa to get first hand images from their rovers as well as some information about their camera view name, rovers name, status, landing and Launching dates.
-                    Select Dates From <b>2014</b> to <b>2022</b> and select the camera view of your preference.
+                    Select Dates From <b>2014</b> to <b>2021</b> and select the camera view of your preference.
                 </p>
             
                 <input id="input" type="text" placeholder="YYYY-MM-DD" class="input-box">
@@ -40,8 +40,8 @@
     $(document).ready(function() {
         $("#input").datepicker({
             dateFormat: "yy-mm-dd",
-            minDate: new Date(2014, 0, 1),
-            maxDate: new Date(2022, 11, 31),
+            minDate: new Date(2014, 1, 1),
+            maxDate: new Date(2021, 12, 31),
             changeMonth: true, 
             changeYear: true        
         });
